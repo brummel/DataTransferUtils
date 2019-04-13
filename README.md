@@ -10,8 +10,8 @@ C:\Utils> DataTransferUtils.exe
 ```
 
 ## Example Usage
-Use the TransferDataToFile verb to transfer the output of SQL query or stored procedure to a delimited file. x
-By default, column headers will be included and will be inferred by the column names in the result set.
+Use the TransferDataToFile verb to transfer the output of SQL query or stored procedure to a delimited file.
+By default, column headers will be included in the output file and will be inferred from the column names in the SQL result set.
 ```
 C:\Utils> DataTransferUtils.exe TransferDataToFile -q "SELECT * FROM Audit.dbo.Logs" -f "AuditLogs.csv"
 ```
