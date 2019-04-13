@@ -9,7 +9,7 @@ To see a list of all available verbs, run the utility on the command line.
 C:\Utils> DataTransferUtils.exe
 ```
 
-## Examples
+## Example Usage
 Use the TransferDataToFile verb to transfer the output of SQL query or stored procedure to a delimited file. x
 By default, column headers will be included and will be inferred by the column names in the result set.
 ```
