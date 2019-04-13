@@ -9,13 +9,16 @@ To see a list of all available verbs, run the utility on the command line.
 C:\Utils> DataTransferUtils.exe
 ```
 
-## Usage
+## Examples
+Use the TransferDataToFile verb to transfer the output of SQL query or stored procedure to a delimited file.
 ```
 C:\Utils> DataTransferUtils.exe TransferDataToFile -q "SELECT * FROM Audit.dbo.Logs" -f "AuditLogs.csv"
 ```
 
 ## Config
+Specify the defualt connection string and file output folder in  DataTransferUitls.exe.config file.
 ```xml
-<AppSettings>
-  <Config/>
-</AppSettings>
+<appSettings>
+  <add key="DefaultConnectionString" value="Server=.; Database=Extracts; Trusted_Connection=True;"/>
+  <add key="DefaultRootDirectory" value="C:\Temp\"/>
+</appSettings>
