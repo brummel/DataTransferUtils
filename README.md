@@ -4,7 +4,7 @@ It can be used as a fast, less cumbersome alternative to the SQL Server bcp.exe 
 
 **Example**
 ```
-C:\Utils> DataTransferUtils.exe TransferDataToFile -q "SELECT * FROM Audit.dbo.Logs" -f "AuditLogs.csv" -s ";"
+C:\Utils> DataTransferUtils.exe TransferDataToFile -q "SELECT * FROM Audit.dbo.Logs" -f "AuditLogs.csv"
 ```
 
 The utility is built using the [CommandLineParser](https://github.com/commandlineparser/commandline) library.
